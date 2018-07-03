@@ -2,4 +2,5 @@
     <string name="app_name">FuelLoadCalculator</string>
     <string name="density_text">Fuel density</string>
     <string name="save_button">Save</string>
+    <string name="tank_number"></string>
 </resources>

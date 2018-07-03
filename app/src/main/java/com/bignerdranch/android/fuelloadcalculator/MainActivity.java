@@ -3,10 +3,15 @@ package com.bignerdranch.android.fuelloadcalculator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     Button SaveButton;
     EditText density;
@@ -25,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
                 //Does nothing at the moment
             }
         });
+
+        Spinner spinner = (Spinner) findViewById(R.id.tank_spinner);
+        spinner.setOnItemClickListener();
 
 
     }
